@@ -35,4 +35,5 @@ public class ActivitySector  implements Serializable {
                 this.libelleSecteurActivite=libelle;
 
         }
+
 }
