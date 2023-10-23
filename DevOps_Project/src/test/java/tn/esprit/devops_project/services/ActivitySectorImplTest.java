@@ -16,17 +16,11 @@ import java.util.Optional;
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
 class ActivitySectorImplTest {
+
     @InjectMocks
     ActivitySectorImpl activitySectorimp;
     @Mock
     ActivitySectorRepository activitySectorRepository;
-
-    List<ActivitySector> activitySectorList = new ArrayList<ActivitySector>() {
-        {
-        add( new ActivitySector(1L,"123mock","mock") );
-        add( new ActivitySector(250L,"456","libelletest1") );
-
-    }};
 
 
     ActivitySector activitySector = new ActivitySector(1L,"123mock", "mock");
