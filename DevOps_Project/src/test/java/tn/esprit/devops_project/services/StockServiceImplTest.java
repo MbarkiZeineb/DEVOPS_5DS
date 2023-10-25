@@ -1,7 +1,6 @@
 package tn.esprit.devops_project.services;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -19,6 +18,8 @@ import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
 @RunWith(MockitoJUnitRunner.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 class StockServiceImplTest {
     @Mock
     StockRepository stockRepository;
@@ -44,6 +45,7 @@ class StockServiceImplTest {
 }
 */
     @Test
+    @Order(1)
     void retrieveStock(){
         Stock stock= new Stock((long) 1,"stock num1");
         Mockito.when(stockRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(stock));

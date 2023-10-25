@@ -1,8 +1,11 @@
 package tn.esprit.devops_project.services;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -31,6 +34,8 @@ import tn.esprit.devops_project.services.ProductServiceImpl;
 
 @ExtendWith(MockitoExtension.class)
 @RunWith(MockitoJUnitRunner.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 class ProductServiceImplTest {
 
 
@@ -55,6 +60,7 @@ class ProductServiceImplTest {
     */
 
     @Test
+    @Order(1)
     void retrieveProduct() {
         Long productIdToRetrieve = 1L;
         Product expectedProduct = new Product(productIdToRetrieve, "Retrieved Product", 30L, 15, ProductCategory.ELECTRONICS);
@@ -64,9 +70,9 @@ class ProductServiceImplTest {
     }
 
     @Test
+    @Order(2)
     void retreiveAllProduct() {
         Product product = new Product(1L, "produit1", 20L, 10, ProductCategory.ELECTRONICS);
-        when(productRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(product));
 
         List<Product> productList = new ArrayList<>();
         productList.add(product);
@@ -75,13 +81,13 @@ class ProductServiceImplTest {
 
         List<Product> result = productServiceImpl.retreiveAllProduct();
 
-        // Assertions
         Assertions.assertEquals(2, result.size());
         Assertions.assertEquals("produit1", result.get(0).getTitle());
         Assertions.assertEquals("produit2", result.get(1).getTitle());
     }
 
     @Test
+    @Order(3)
     void retrieveProductByCategory() {
         ProductCategory categoryToRetrieve = ProductCategory.ELECTRONICS;
         List<Product> productsInCategory = new ArrayList<>();
@@ -96,17 +102,19 @@ class ProductServiceImplTest {
     }
 
     @Test
+    @Order(4)
     void deleteProduct() {
         doNothing().when(productRepository).deleteById((Long) any());
         productServiceImpl.deleteProduct(2L);
         verify(productRepository).deleteById((Long) any());
     }
 
-    @Test
+    /*@Test
     void retreiveProductStock() {
     }
 
-
+*/
+    /*
     @Test
     void retrieveAllActivitySectors() {
 
@@ -121,5 +129,7 @@ class ProductServiceImplTest {
 
 
     }
+    */
+
 
 }
