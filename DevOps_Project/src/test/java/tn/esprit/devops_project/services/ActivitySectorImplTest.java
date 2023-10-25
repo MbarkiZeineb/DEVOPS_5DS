@@ -16,6 +16,8 @@ import tn.esprit.devops_project.repositories.ActivitySectorRepository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import static org.junit.Assert.*;
+
 @RunWith( SpringRunner.class)
 @ExtendWith(MockitoExtension.class)
 class ActivitySectorImplTest {
@@ -38,6 +40,10 @@ class ActivitySectorImplTest {
 
         // Call the method you want to test
         ActivitySector activity = activitySectorimp.retrieveActivitySector(1L);
+
+
+        assertNotNull(activity);
+
 
     }
 
