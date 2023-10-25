@@ -10,7 +10,7 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
+
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Stock implements Serializable {

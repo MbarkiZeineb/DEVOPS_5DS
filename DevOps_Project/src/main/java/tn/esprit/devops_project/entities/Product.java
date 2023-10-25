@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
+
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Product implements Serializable {
