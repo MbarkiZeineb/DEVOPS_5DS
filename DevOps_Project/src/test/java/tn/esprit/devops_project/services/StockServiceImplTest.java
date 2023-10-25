@@ -14,14 +14,12 @@ import tn.esprit.devops_project.entities.Stock;
 import tn.esprit.devops_project.repositories.StockRepository;
 import tn.esprit.devops_project.services.Iservices.IStockService;
 import org.junit.runner.RunWith;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
 @RunWith(SpringRunner.class)
-@SpringBootTest
 class StockServiceImplTest {
     @Mock
     StockRepository stockRepository;
