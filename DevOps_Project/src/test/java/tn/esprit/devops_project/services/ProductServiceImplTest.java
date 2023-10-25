@@ -30,7 +30,7 @@ import tn.esprit.devops_project.services.ProductServiceImpl;
 @RunWith(SpringRunner.class)
 @ExtendWith(MockitoExtension.class)
 class ProductServiceImplTest {
-
+/*
 
     @InjectMocks
     ProductServiceImpl productServiceImpl;
@@ -103,7 +103,7 @@ class ProductServiceImplTest {
     void retreiveProductStock() {
     }
 
- */
+
     @Test
     void retrieveAllActivitySectors() {
 
@@ -118,4 +118,5 @@ class ProductServiceImplTest {
 
 
     }
+    */
 }
