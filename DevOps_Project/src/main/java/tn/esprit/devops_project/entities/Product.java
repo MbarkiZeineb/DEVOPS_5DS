@@ -16,7 +16,7 @@ import java.io.Serializable;
 public class Product implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idProduct;
+    Long idProduct;
     String title;
     float price;
     int quantity;
@@ -26,7 +26,7 @@ public class Product implements Serializable {
     @JsonIgnore
     Stock stock;
 
-    public Product(long idProduct, String title, float price, int quantity, ProductCategory category) {
+    public Product(Long idProduct, String title, float price, int quantity, ProductCategory category) {
         this.idProduct = idProduct;
         this.title = title;
         this.price = price;

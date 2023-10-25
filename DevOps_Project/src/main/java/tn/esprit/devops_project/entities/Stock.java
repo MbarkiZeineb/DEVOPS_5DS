@@ -16,12 +16,12 @@ import java.util.Set;
 public class Stock implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idStock;
+    Long idStock;
     String title;
     @OneToMany(mappedBy = "stock")
     Set<Product> products;
 
-    public Stock(long idStock, String title) {
+    public Stock(Long idStock, String title) {
         this.idStock=idStock;
         this.title=title;
     }
