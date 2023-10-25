@@ -2,6 +2,7 @@ package tn.esprit.devops_project.services;
 
 
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -9,6 +10,9 @@ import org.mockito.Mock;
 
 import org.mockito.Mockito;
 import org.springframework.test.context.junit4.SpringRunner;
+import tn.esprit.devops_project.entities.Product;
+import tn.esprit.devops_project.entities.ProductCategory;
+import tn.esprit.devops_project.repositories.ProductRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,9 +23,7 @@ import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.*;
 
 import org.mockito.junit.jupiter.MockitoExtension;
-import tn.esprit.devops_project.entities.Product;
-import tn.esprit.devops_project.entities.ProductCategory;
-import tn.esprit.devops_project.repositories.ProductRepository;
+import tn.esprit.devops_project.services.ProductServiceImpl;
 
 
 @RunWith(SpringRunner.class)
@@ -54,7 +56,7 @@ class ProductServiceImplTest {
         Product expectedProduct = new Product(productIdToRetrieve, "Retrieved Product", 30L, 15, ProductCategory.ELECTRONICS);
         when(productRepository.findById(productIdToRetrieve)).thenReturn(Optional.of(expectedProduct));
         Product retrievedProduct = productServiceImpl.retrieveProduct(productIdToRetrieve);
-        assertEquals(expectedProduct, retrievedProduct);
+        Assertions.assertEquals(expectedProduct, retrievedProduct);
     }
 
     @Test
@@ -70,9 +72,9 @@ class ProductServiceImplTest {
         List<Product> result = productServiceImpl.retreiveAllProduct();
 
         // Assertions
-        assertEquals(2, result.size());
-        assertEquals("produit1", result.get(0).getTitle());
-        assertEquals("produit2", result.get(1).getTitle());
+        Assertions.assertEquals(2, result.size());
+        Assertions.assertEquals("produit1", result.get(0).getTitle());
+        Assertions.assertEquals("produit2", result.get(1).getTitle());
     }
 
     @Test
@@ -84,9 +86,9 @@ class ProductServiceImplTest {
         when(productRepository.findByCategory(eq(categoryToRetrieve))).thenReturn(productsInCategory);
         List<Product> retrievedProducts = productServiceImpl.retrieveProductByCategory(categoryToRetrieve);
 
-        assertEquals(2, retrievedProducts.size());
+        Assertions.assertEquals(2, retrievedProducts.size());
 
-        retrievedProducts.forEach(product -> assertEquals(categoryToRetrieve, product.getCategory()));
+        retrievedProducts.forEach(product -> Assertions.assertEquals(categoryToRetrieve, product.getCategory()));
     }
 
     @Test
