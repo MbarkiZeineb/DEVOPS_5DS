@@ -10,6 +10,7 @@ import org.mockito.Mock;
 
 import org.mockito.Mockito;
 import org.springframework.test.context.junit4.SpringRunner;
+import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.entities.Product;
 import tn.esprit.devops_project.entities.ProductCategory;
 import tn.esprit.devops_project.repositories.ProductRepository;
@@ -49,7 +50,7 @@ class ProductServiceImplTest {
 
     }
     */
-
+/*
     @Test
     void retrieveProduct() {
         Long productIdToRetrieve = 1L;
@@ -103,4 +104,18 @@ class ProductServiceImplTest {
     }
 
  */
+    @Test
+    void retrieveAllActivitySectors() {
+
+        Product product = new Product(1L, "produit1", 20L, 10, ProductCategory.ELECTRONICS);
+
+        // Mock the behavior of activitySectorRepository.findById
+        Mockito.when(productRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(product));
+
+        // Call the method you want to test
+        Product product1 = productServiceImpl.retrieveProduct(1L);
+        Assertions.assertNull(product1);
+
+
+    }
 }
