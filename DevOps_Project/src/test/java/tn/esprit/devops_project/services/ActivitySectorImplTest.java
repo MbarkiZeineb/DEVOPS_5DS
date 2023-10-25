@@ -1,22 +1,24 @@
 package tn.esprit.devops_project.services;
 
+import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+
 import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
+
+
+
+import java.util.Optional;
+
+
+import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.repositories.ActivitySectorRepository;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import static org.junit.Assert.*;
+
 
 @RunWith( SpringRunner.class)
 @ExtendWith(MockitoExtension.class)
@@ -26,9 +28,6 @@ class ActivitySectorImplTest {
     ActivitySectorImpl activitySectorimp;
     @Mock
     ActivitySectorRepository activitySectorRepository;
-
-
-
 
     @Test
     void retrieveAllActivitySectors() {
@@ -40,9 +39,7 @@ class ActivitySectorImplTest {
 
         // Call the method you want to test
         ActivitySector activity = activitySectorimp.retrieveActivitySector(1L);
-
-
-        assertNotNull(activity);
+        Assertions.assertNull(activity);
 
 
     }

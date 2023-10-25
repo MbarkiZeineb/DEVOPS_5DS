@@ -7,21 +7,16 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.devops_project.entities.Stock;
 import tn.esprit.devops_project.repositories.StockRepository;
-import tn.esprit.devops_project.services.Iservices.IStockService;
 import org.junit.runner.RunWith;
 
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
 @RunWith(SpringRunner.class)
-@SpringBootTest
 class StockServiceImplTest {
     @Mock
     StockRepository stockRepository;
