@@ -16,7 +16,7 @@ import java.io.Serializable;
 public class Product implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long idProduct;
+    long idProduct;
     String title;
     float price;
     int quantity;
