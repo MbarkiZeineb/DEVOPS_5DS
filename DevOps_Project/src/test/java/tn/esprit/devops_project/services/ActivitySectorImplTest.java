@@ -8,6 +8,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
 import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 
 
@@ -20,7 +22,7 @@ import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.repositories.ActivitySectorRepository;
 
 
-@RunWith( SpringRunner.class)
+@RunWith(MockitoJUnitRunner.class)
 @ExtendWith(MockitoExtension.class)
 class ActivitySectorImplTest {
 

@@ -9,6 +9,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
 import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.entities.Product;
@@ -27,16 +29,17 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.devops_project.services.ProductServiceImpl;
 
 
-@RunWith(SpringRunner.class)
 @ExtendWith(MockitoExtension.class)
+@RunWith(MockitoJUnitRunner.class)
 class ProductServiceImplTest {
-/*
 
-    @InjectMocks
-    ProductServiceImpl productServiceImpl;
 
     @Mock
     ProductRepository productRepository;
+    @InjectMocks
+    ProductServiceImpl productServiceImpl;
+
+
 
     /*
     @Test
@@ -50,7 +53,7 @@ class ProductServiceImplTest {
 
     }
     */
-/*
+
     @Test
     void retrieveProduct() {
         Long productIdToRetrieve = 1L;
@@ -98,7 +101,7 @@ class ProductServiceImplTest {
         productServiceImpl.deleteProduct(2L);
         verify(productRepository).deleteById((Long) any());
     }
-/*
+
     @Test
     void retreiveProductStock() {
     }
@@ -118,5 +121,5 @@ class ProductServiceImplTest {
 
 
     }
-    */
+
 }

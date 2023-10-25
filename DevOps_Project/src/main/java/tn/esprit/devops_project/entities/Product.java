@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Entity
 @Getter
 @Setter
-
+@AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Product implements Serializable {
@@ -22,9 +22,9 @@ public class Product implements Serializable {
     int quantity;
     @Enumerated(EnumType.STRING)
     ProductCategory category;
-    /*@ManyToOne
+    @ManyToOne
     @JsonIgnore
-    Stock stock;*/
+    Stock stock;
 
     public Product(Long idProduct, String title, float price, int quantity, ProductCategory category) {
         this.idProduct = idProduct;
