@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DEVOPS_5DS.iml" filepath="$PROJECT_DIR$/.idea/DEVOPS_5DS.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevOps_Project/DevOps_Project.iml" filepath="$PROJECT_DIR$/DevOps_Project/DevOps_Project.iml" />
+
     </modules>
   </component>
 </project>
