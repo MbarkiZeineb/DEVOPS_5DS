@@ -14,4 +14,8 @@ public interface IActivitySector {
     ActivitySector updateActivitySector(ActivitySector activitySector);
 
     ActivitySector retrieveActivitySector(Long id);
+
+    //List<ActivitySector> retrieveAllActivitySectorsMock();
+
+
 }
