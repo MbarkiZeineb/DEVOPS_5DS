@@ -1,6 +1,7 @@
 package tn.esprit.devops_project.services;
 
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tn.esprit.devops_project.services.Iservices.IStockService;
 import tn.esprit.devops_project.entities.Stock;
@@ -11,8 +12,8 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class StockServiceImpl implements IStockService {
-
-   private final StockRepository stockRepository;
+    @Autowired
+    StockRepository stockRepository;
 
     @Override
     public Stock addStock(Stock stock) {
@@ -26,6 +27,7 @@ public class StockServiceImpl implements IStockService {
 
     @Override
     public List<Stock> retrieveAllStock() {
+
         return stockRepository.findAll();
     }
 
