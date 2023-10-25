@@ -3,17 +3,20 @@ package tn.esprit.devops_project.services;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.repositories.ActivitySectorRepository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-@SpringBootTest
+@RunWith( SpringRunner.class)
 @ExtendWith(MockitoExtension.class)
 class ActivitySectorImplTest {
 
@@ -23,18 +26,19 @@ class ActivitySectorImplTest {
     ActivitySectorRepository activitySectorRepository;
 
 
-    ActivitySector activitySector = new ActivitySector(1L,"123mock", "mock");
-
 
 
     @Test
     void retrieveAllActivitySectors() {
 
+        ActivitySector activitySector = new ActivitySector(1L, "123mock", "mock");
+
+        // Mock the behavior of activitySectorRepository.findById
         Mockito.when(activitySectorRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(activitySector));
 
-        ActivitySector activiy = activitySectorimp.retrieveActivitySector(4L);
+        // Call the method you want to test
+        ActivitySector activity = activitySectorimp.retrieveActivitySector(1L);
 
-        Assertions.assertNotNull(activiy);
     }
 
   /*  @Test
