@@ -19,7 +19,6 @@ import java.util.Optional;
 @ExtendWith(MockitoExtension.class)
 @RunWith(MockitoJUnitRunner.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-
 class StockServiceImplTest {
     @Mock
     StockRepository stockRepository;
