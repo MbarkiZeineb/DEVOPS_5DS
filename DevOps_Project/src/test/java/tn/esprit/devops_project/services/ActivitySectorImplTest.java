@@ -23,6 +23,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.repositories.ActivitySectorRepository;
 
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 @ExtendWith(MockitoExtension.class)
@@ -50,12 +51,25 @@ class ActivitySectorImplTest {
 
     }
 
+    @Test
+    void deleteActivitySector() {
+
+        doNothing().when(activitySectorRepository).deleteById((Long) any());
+        activitySectorimp.deleteActivitySector(1L);
+        verify(activitySectorRepository).deleteById((Long) any());
+    }
+
+
   /*  @Test
     void addActivitySector() {
     }
 
     @Test
     void deleteActivitySector() {
+
+    doNothing().when(productRepository).deleteById((Long) any());
+        productServiceImpl.deleteProduct(2L);
+        verify(productRepository).deleteById((Long) any());
     }
 
     @Test
