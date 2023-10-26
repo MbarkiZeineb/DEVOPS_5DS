@@ -30,6 +30,10 @@ public class StockServiceImpl implements IStockService {
 
         return stockRepository.findAll();
     }
+    @Override
+    public void deleteStock(Long id) {
+        stockRepository.deleteById(id);
+    }
 
 
 
