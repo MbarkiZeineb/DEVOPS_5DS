@@ -142,6 +142,7 @@
         <repository>
             <id>deploymentRepo</id>
             <name>Nexus Repository</name>
+            <version>0.0.1-SNAPSHOT</version>
             <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
