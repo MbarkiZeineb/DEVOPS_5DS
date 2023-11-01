@@ -20,8 +20,8 @@ public class ActivitySectorController {
     }
 
     @PostMapping("/activitySector")
-    ActivitySector addActivitySector(@RequestBody ActivitySector activitySector){
-        return activitySectorService.addActivitySector(activitySector);
+    ActivitySector addActivitySector(@RequestBody ActivitySector activitySector1){
+        return activitySectorService.addActivitySector(activitySector1);
     }
 
     @DeleteMapping("/activitySector/{id}")
@@ -30,8 +30,8 @@ public class ActivitySectorController {
     }
 
     @PutMapping("/activitySector")
-    ActivitySector updateActivitySector(@RequestBody ActivitySector activitySector){
-        return activitySectorService.updateActivitySector(activitySector);
+    ActivitySector updateActivitySector(@RequestBody ActivitySector activitySector1){
+        return activitySectorService.updateActivitySector(activitySector1);
     }
 
     @GetMapping("/activitySector/{id}")
