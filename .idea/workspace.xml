@@ -21,6 +21,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -32,6 +33,16 @@
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Iheb/Desktop/DEVOPS_5DS/DevOps_Project&quot;
+  }
+}</component>
+>>>>>>> Stashed changes
   <component name="RunManager">
     <configuration name="DevOps_ProjectSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="DevOps_Project" />
