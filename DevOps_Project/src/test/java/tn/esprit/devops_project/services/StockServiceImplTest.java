@@ -16,6 +16,10 @@ import org.junit.runner.RunWith;
 
 import java.util.Optional;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.verify;
+
 @ExtendWith(MockitoExtension.class)
 @RunWith(MockitoJUnitRunner.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -25,32 +29,32 @@ class StockServiceImplTest {
     @InjectMocks
     StockServiceImpl stockService;
 
-  // Stock stock= new Stock((long) 1,"stock num1");
-   /*
-   List<Stock> stockList = new ArrayList<Stock>();
-    {
-        stockList.add(new Stock(1,"stock num1"));
-        stockList.add(new Stock(2,"stock num3"));
-    };
-    */
-
-
-
-    // sh yefhem eli mafamesh lisaison avec la base
-/*
-    @Test
-    void addStock() {
-
-}
-*/
     @Test
     @Order(1)
-    void retrieveStock(){
-        Stock stock= new Stock((long) 1,"stock num1");
+    void retrieveAllStock(){
+        Stock stock= new Stock(1L,"stock num1");
         Mockito.when(stockRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(stock));
         Stock stock1= stockService.retrieveStock(stock.getIdStock());
         Assertions.assertNotNull(stock1);
+    }
+/*
+    @Test
+    public void addStock() {
+        Stock stock = new Stock(2L, "Stock à ajouter");
+        Stock savedStock = stockService.addStock(stock);
+        //	assertEquals(expected+1, stockService.retrieveAllStocks().size());
+        Assertions.assertNotNull(savedStock.getTitle());
+        stockService.deleteStock(savedStock.getIdStock());
+    }
+*/
+@Test
+void deleteStock() {
+    doNothing().when(stockRepository).deleteById((Long) any());
+    stockService.deleteStock(1L);
+    verify(stockRepository).deleteById((Long) any());
 }
+
+
 /*
     @Test
     void retrieveAllStock(){
@@ -58,5 +62,4 @@ class StockServiceImplTest {
         Assertions.assertEquals(0,stocks.size());
     }
     */
-
 }
