@@ -1,3 +1,5 @@
+package tn.esprit.devops_project.services;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -6,14 +8,16 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import tn.esprit.devops_project.entities.Supplier;
 import tn.esprit.devops_project.repositories.SupplierRepository;
-import tn.esprit.devops_project.services.SupplierServiceImpl;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.times;
 
-class TestSupplier {
+class SupplierServiceImplTest {
 
     @Mock
     private SupplierRepository supplierRepository;
