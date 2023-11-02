@@ -1,7 +1,12 @@
 package tn.esprit.devops_project.services;
 
+<<<<<<< Updated upstream
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+=======
+import org.junit.Test;
+import org.junit.jupiter.api.*;
+>>>>>>> Stashed changes
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -50,6 +55,16 @@ class StockServiceImplTest {
         Mockito.when(stockRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(stock));
         Stock stock1= stockService.retrieveStock(stock.getIdStock());
         Assertions.assertNotNull(stock1);
+<<<<<<< Updated upstream
+=======
+    }
+
+@Test
+void deleteStock() {
+    doNothing().when(stockRepository).deleteById((Long) any());
+    stockService.deleteStock(1L);
+    verify(stockRepository).deleteById((Long) any());
+>>>>>>> Stashed changes
 }
 /*
     @Test
@@ -58,5 +73,18 @@ class StockServiceImplTest {
         Assertions.assertEquals(0,stocks.size());
     }
     */
+<<<<<<< Updated upstream
 
+=======
+    /*
+    @Test
+    public void addStock() {
+        Stock stock = new Stock(2L, "Stock à ajouter");
+        Stock savedStock = stockService.addStock(stock);
+        //	assertEquals(expected+1, stockService.retrieveAllStocks().size());
+        Assertions.assertNotNull(savedStock.getTitle());
+        stockService.deleteStock(savedStock.getIdStock());
+    }
+*/
+>>>>>>> Stashed changes
 }
