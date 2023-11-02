@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/repositories/SupplierRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/repositories/SupplierRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/ActivitySectorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/ActivitySectorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/Iservices/IStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/Iservices/IStockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/test/java/tn/esprit/devops_project/services/SupplierServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/test/java/tn/esprit/devops_project/services/SupplierServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/repositories/InvoiceDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/repositories/InvoiceDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/repositories/InvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/repositories/InvoiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/repositories/OperatorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/repositories/OperatorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/OperatorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/OperatorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/SupplierServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/SupplierServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697716493982</updated>
       <workItem from="1697716498805" duration="467000" />
-      <workItem from="1698933461930" duration="2855000" />
+      <workItem from="1698933461930" duration="3122000" />
     </task>
     <servers />
   </component>
