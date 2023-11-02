@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="" />
+    <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_27.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_28.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/Iservices/IStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/Iservices/IStockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/services/StockServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/test/java/tn/esprit/devops_project/services/StockServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/test/java/tn/esprit/devops_project/services/StockServiceImplTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,10 +35,45 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Iheb/Desktop/DEVOPS_5DS/DevOps_Project"
+    "last_opened_file_path": "C:/Users/Iheb/Desktop/DEVOPS_5DS/DevOps_Project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "d43225b7e83b8728c20fafc07139b32a"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.StockServiceImplTest">
+    <configuration name="StockServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOps_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tn.esprit.devops_project.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tn.esprit.devops_project.services" />
+      <option name="MAIN_CLASS_NAME" value="tn.esprit.devops_project.services.StockServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DevOps_ProjectSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="DevOps_Project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.devops_project.DevOps_ProjectSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StockServiceImplTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,6 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697716493982</updated>
       <workItem from="1697716498805" duration="467000" />
+      <workItem from="1698933461930" duration="597000" />
     </task>
     <servers />
   </component>
