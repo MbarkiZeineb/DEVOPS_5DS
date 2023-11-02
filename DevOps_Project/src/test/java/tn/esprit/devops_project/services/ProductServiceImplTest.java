@@ -47,16 +47,16 @@ class ProductServiceImplTest {
 
 
     /*
-    @Test
-    void addProduct() {
+        @Test
+        void addProduct() {
 
-        Product productToAdd = new Product(3L, "New Product", 30L, 15, ProductCategory.ELECTRONICS);
-        Product expectedProduct = new Product(3L, "New Product", 30L, 15, ProductCategory.ELECTRONICS);
-        when(productRepository.save(any(Product.class))).thenReturn(expectedProduct);
-        Product addedProduct = productServiceImpl.addProduct(productToAdd, 1);
-        assertEquals(expectedProduct, addedProduct); // Check
+            Product productToAdd = new Product(3L, "New Product", 30L, 15, ProductCategory.ELECTRONICS);
+            Product expectedProduct = new Product(3L, "New Product", 30L, 15, ProductCategory.ELECTRONICS);
+            when(productRepository.save(any(Product.class))).thenReturn(expectedProduct);
+            Product addedProduct = productServiceImpl.addProduct(productToAdd, 1);
+            assertEquals(expectedProduct, addedProduct); // Check
 
-    }
+        }
     */
 
     @Test
