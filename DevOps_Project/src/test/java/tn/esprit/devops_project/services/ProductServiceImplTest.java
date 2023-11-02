@@ -1,15 +1,21 @@
 package tn.esprit.devops_project.services;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
 import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
+import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.entities.Product;
 import tn.esprit.devops_project.entities.ProductCategory;
 import tn.esprit.devops_project.repositories.ProductRepository;
@@ -26,16 +32,19 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.devops_project.services.ProductServiceImpl;
 
 
-@RunWith(SpringRunner.class)
 @ExtendWith(MockitoExtension.class)
+@RunWith(MockitoJUnitRunner.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 class ProductServiceImplTest {
 
 
+    @Mock
+    ProductRepository productRepository;
     @InjectMocks
     ProductServiceImpl productServiceImpl;
 
-    @Mock
-    ProductRepository productRepository;
+
 
     /*
     @Test
@@ -51,6 +60,7 @@ class ProductServiceImplTest {
     */
 
     @Test
+    @Order(1)
     void retrieveProduct() {
         Long productIdToRetrieve = 1L;
         Product expectedProduct = new Product(productIdToRetrieve, "Retrieved Product", 30L, 15, ProductCategory.ELECTRONICS);
@@ -60,9 +70,9 @@ class ProductServiceImplTest {
     }
 
     @Test
+    @Order(2)
     void retreiveAllProduct() {
         Product product = new Product(1L, "produit1", 20L, 10, ProductCategory.ELECTRONICS);
-        when(productRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(product));
 
         List<Product> productList = new ArrayList<>();
         productList.add(product);
@@ -71,13 +81,13 @@ class ProductServiceImplTest {
 
         List<Product> result = productServiceImpl.retreiveAllProduct();
 
-        // Assertions
         Assertions.assertEquals(2, result.size());
         Assertions.assertEquals("produit1", result.get(0).getTitle());
         Assertions.assertEquals("produit2", result.get(1).getTitle());
     }
 
     @Test
+    @Order(3)
     void retrieveProductByCategory() {
         ProductCategory categoryToRetrieve = ProductCategory.ELECTRONICS;
         List<Product> productsInCategory = new ArrayList<>();
@@ -92,15 +102,34 @@ class ProductServiceImplTest {
     }
 
     @Test
+    @Order(4)
     void deleteProduct() {
         doNothing().when(productRepository).deleteById((Long) any());
         productServiceImpl.deleteProduct(2L);
         verify(productRepository).deleteById((Long) any());
     }
-/*
-    @Test
+
+    /*@Test
     void retreiveProductStock() {
     }
 
- */
+*/
+    /*
+    @Test
+    void retrieveAllActivitySectors() {
+
+        Product product = new Product(1L, "produit1", 20L, 10, ProductCategory.ELECTRONICS);
+
+        // Mock the behavior of activitySectorRepository.findById
+        Mockito.when(productRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(product));
+
+        // Call the method you want to test
+        Product product1 = productServiceImpl.retrieveProduct(1L);
+        Assertions.assertNull(product1);
+
+
+    }
+    */
+
+
 }

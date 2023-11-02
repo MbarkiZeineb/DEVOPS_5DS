@@ -40,5 +40,4 @@ public class StockServiceImpl implements IStockService {
         return  stockRepository.save(stock);
     }
 
-
 }
