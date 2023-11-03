@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="">
+    <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="update fct in stock">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevOps_Project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/DevOpsProjectSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/DevOpsProjectSpringBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Iheb/Desktop/DEVOPS_5DS/DevOps_Project",
+    "last_opened_file_path": "C:/Users/Abir/Desktop/5DS/Devops/Devops_Cours-main",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>

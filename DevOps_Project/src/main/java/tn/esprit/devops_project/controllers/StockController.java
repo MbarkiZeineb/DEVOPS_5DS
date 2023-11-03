@@ -15,7 +15,8 @@ public class StockController {
 
     IStockService stockService;
 
-    @PostMapping("/stock")
+    @ResponseBody
+    @PostMapping("/add-stock")
     Stock addStock(@RequestBody Stock stock)
     {
         return stockService.addStock(stock);
@@ -27,7 +28,8 @@ public class StockController {
         return stockService.retrieveStock(id);
     }
 
-    @GetMapping("/stock")
+    @ResponseBody
+    @GetMapping("/retrieve-all-stock")
     List<Stock> retrieveAllStock()
     {
         return stockService.retrieveAllStock();
