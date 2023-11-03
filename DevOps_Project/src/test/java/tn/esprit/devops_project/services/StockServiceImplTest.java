@@ -32,7 +32,7 @@ class StockServiceImplTest {
 
     @Test
     @Order(1)
-    void retrieveAllStock(){
+    void testRetrieveAllStock(){
         Stock stock= new Stock(1L,"stock num1");
         Mockito.when(stockRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(stock));
         Stock stock1= stockService.retrieveStock(stock.getIdStock());
@@ -49,7 +49,15 @@ class StockServiceImplTest {
         }
     */
     @Test
-    void deleteStock() {
+    void testAddStock() {
+        Stock stock = new Stock();
+        when(stockRepository.save(stock)).thenReturn(stock);
+        Stock result = stockService.addStock(stock);
+        Assertions.assertEquals(stock, result);
+        verify(stockRepository, times(1)).save(stock);
+    }
+    @Test
+    void testDeleteStock() {
         doNothing().when(stockRepository).deleteById((Long) any());
         stockService.deleteStock(1L);
         verify(stockRepository).deleteById((Long) any());
