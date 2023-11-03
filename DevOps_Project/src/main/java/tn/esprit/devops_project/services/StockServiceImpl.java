@@ -35,10 +35,6 @@ public class StockServiceImpl implements IStockService {
         stockRepository.deleteById(id);
     }
 
-    @Override
-    public Stock updateStock(Stock stock) {
-        return  stockRepository.save(stock);
-    }
 
 
 }

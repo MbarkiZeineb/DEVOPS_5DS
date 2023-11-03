@@ -10,7 +10,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.devops_project.entities.Stock;
-import tn.esprit.devops_project.entities.Supplier;
 import tn.esprit.devops_project.repositories.StockRepository;
 import org.junit.runner.RunWith;
 
@@ -18,8 +17,8 @@ import org.junit.runner.RunWith;
 import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
-import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
 @RunWith(MockitoJUnitRunner.class)
@@ -54,16 +53,7 @@ void deleteStock() {
     stockService.deleteStock(1L);
     verify(stockRepository).deleteById((Long) any());
 }
-    @Test
-    void testUpdateStock() {
-        Stock stock = new Stock();
-        when(stockRepository.save(stock)).thenReturn(stock);
 
-        Stock result = stockService.updateStock(stock);
-
-        Assertions.assertEquals(stock, result);
-        verify(stockRepository, times(1)).save(stock);
-    }
 
 /*
     @Test
