@@ -53,7 +53,7 @@ class ActivitySectorImplTest {
 
     @Test
     void deleteActivitySector() {
-
+     ///suprimer
         doNothing().when(activitySectorRepository).deleteById((Long) any());
         activitySectorimp.deleteActivitySector(1L);
         verify(activitySectorRepository).deleteById((Long) any());
