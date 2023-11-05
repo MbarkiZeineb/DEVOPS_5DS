@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="update fct in stock">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/2663794c8f01f908639390b758f84f1d6d0a5e5d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/2663794c8f01f908639390b758f84f1d6d0a5e5d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c3e3c5f555086004db468e0ca2345cb540887a8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c3e3c5f555086004db468e0ca2345cb540887a8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c5ee917237faac71db87a8bc5c8f6553cd072f21" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c5ee917237faac71db87a8bc5c8f6553cd072f21" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevOps_Project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/DevOpsProjectSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/DevOpsProjectSpringBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,19 +31,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Abir/Desktop/5DS/Devops/Devops_Cours-main",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Abir/Desktop/5DS/Devops/Devops_Cours-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d43225b7e83b8728c20fafc07139b32a&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="DevOps_ProjectSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="DevOps_Project" />
@@ -57,6 +65,8 @@
       <option name="presentableId" value="Default" />
       <updated>1697716493982</updated>
       <workItem from="1697716498805" duration="467000" />
+      <workItem from="1699130046165" duration="2252000" />
+      <workItem from="1699199970991" duration="267000" />
     </task>
     <servers />
   </component>

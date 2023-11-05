@@ -9,7 +9,6 @@ services:
     volumes:
       - db:/var/lib/mysql
     restart: unless-stopped
-
   devops_project:
     build:
       context: ./
