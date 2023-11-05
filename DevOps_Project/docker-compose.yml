@@ -23,6 +23,10 @@ services:
 
     ports:
       - "3000:3000"
+
+    depends_on:
+      - prometheus
+
   back:
     depends_on:
       - db
