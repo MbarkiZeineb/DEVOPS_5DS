@@ -8,9 +8,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: devops
-    networks:
-     mynetwork:
-      ipv4_address: 172.18.0.2
+
     volumes:
       - db:/var/lib/mysql
     restart: unless-stopped
@@ -33,15 +31,5 @@ services:
     restart: always
     stdin_open: true
     tty: true
-    networks:
-        mynetwork:
-          ipv4_address: 172.18.0.3  # Specify a different fixed IP address
 volumes:
   db:
-networks:
-  mynetwork:
-    driver: bridge
-    ipam:
-     driver: default
-     config:
-      - subnet: 172.18.0.0/16
