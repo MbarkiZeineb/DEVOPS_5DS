@@ -92,7 +92,7 @@
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
-            <scope>runtime</scope>
+            <version>1.7.0</version>
         </dependency>
 
 
