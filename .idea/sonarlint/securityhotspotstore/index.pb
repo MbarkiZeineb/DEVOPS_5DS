@@ -19,3 +19,5 @@ XDevOps_Project/src/test/java/tn/esprit/devops_project/services/StockServiceImpl
 VDevOps_Project/src/main/java/tn/esprit/devops_project/services/ActivitySectorImpl.java,2\2\22e09eec8037db72a31465d66e3b243320df346e
 †
 VDevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java,2\6\2663794c8f01f908639390b758f84f1d6d0a5e5d
+I
+DevOps_Project/Dockerfile,0\b\0b1256adeedef4f6f70e8891b750585a37192bc7
