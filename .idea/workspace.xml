@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="update fct in stock">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/2663794c8f01f908639390b758f84f1d6d0a5e5d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/2663794c8f01f908639390b758f84f1d6d0a5e5d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c3e3c5f555086004db468e0ca2345cb540887a8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c3e3c5f555086004db468e0ca2345cb540887a8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c5ee917237faac71db87a8bc5c8f6553cd072f21" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c5ee917237faac71db87a8bc5c8f6553cd072f21" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_common_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_common_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_agent_0_15_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevOps_Project/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Abir/Desktop/5DS/Devops/Devops_Cours-main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -47,7 +47,14 @@
     &quot;spring.configuration.checksum&quot;: &quot;d43225b7e83b8728c20fafc07139b32a&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.DevOps_ProjectSpringBootApplication">
+    <configuration name="DevOpsProjectSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="DevOps_Project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.devops_project.DevOpsProjectSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DevOps_ProjectSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="DevOps_Project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.devops_project.DevOps_ProjectSpringBootApplication" />
@@ -66,7 +73,9 @@
       <updated>1697716493982</updated>
       <workItem from="1697716498805" duration="467000" />
       <workItem from="1699130046165" duration="2252000" />
-      <workItem from="1699199970991" duration="267000" />
+      <workItem from="1699199970991" duration="1545000" />
+      <workItem from="1699206451182" duration="1009000" />
+      <workItem from="1699211033121" duration="865000" />
     </task>
     <servers />
   </component>
