@@ -55,6 +55,7 @@
             <version>1.7.0</version>
         </dependency>
 
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -68,6 +69,9 @@
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-core</artifactId>
         </dependency>
+
+
+
 
         <dependency>
             <groupId>org.sonarsource.scanner.maven</groupId>
@@ -161,4 +165,4 @@
             <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
-</project>
+</project></project>
