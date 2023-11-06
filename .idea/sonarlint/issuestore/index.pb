@@ -57,3 +57,5 @@ r
 BDevOps_Project/src/main/java/tn/esprit/devops_project/openapi.yaml,4\e\4ef250a3bec102165f0119acfb8ba6a63c28b636
 G
 DevOps_Project/mvnw.cmd,4\0\40c669e55741f3c20cbda99fff115a9c7d733a6f
+I
+DevOps_Project/Dockerfile,0\b\0b1256adeedef4f6f70e8891b750585a37192bc7
