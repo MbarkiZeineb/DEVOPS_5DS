@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="update fct in stock">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevOps_Project/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +92,7 @@
       <workItem from="1699225715099" duration="23000" />
       <workItem from="1699231042334" duration="21000" />
       <workItem from="1699231409691" duration="2044000" />
-      <workItem from="1699301834437" duration="1042000" />
+      <workItem from="1699301834437" duration="2666000" />
     </task>
     <servers />
   </component>
