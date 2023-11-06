@@ -2,13 +2,13 @@ version: '3.1'
 services:
   db:
     image: mysql
-    container_name: base
+    container_name: mon_mysql
     restart: unless-stopped
     ports:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: mysql
-      MYSQL_DATABASE: iheb
+      MYSQL_DATABASE: devops
     networks:
       mynetwork:
         ipv4_address: 172.18.0.2  # Specify the desired fixed IP address
