@@ -59,3 +59,7 @@ G
 DevOps_Project/mvnw.cmd,4\0\40c669e55741f3c20cbda99fff115a9c7d733a6f
 I
 DevOps_Project/Dockerfile,0\b\0b1256adeedef4f6f70e8891b750585a37192bc7
+Š
+ZDevOps_Project/src/test/java/tn/esprit/devops_project/services/ActivitySectorImplTest.java,f\f\ff76f0d269b8267a33268e2750bb6f4291da54d5
+Š
+ZDevOps_Project/src/test/java/tn/esprit/devops_project/services/ProductServiceImplTest.java,2\c\2c52ff868805972707bdc5f0ad2662dc4204d5b2
