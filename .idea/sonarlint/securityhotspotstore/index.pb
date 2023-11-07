@@ -27,3 +27,7 @@ O
 DevOps_Project_Front/Dockerfile,0\3\03b49e9854185acba84e9331e2eec5d3417270f0
 Q
 !DevOps_Project_Front/angular.json,e\c\ec4ee48988325dc72e3f614b777f7dce88b0de54
+Q
+!DevOps_Project_Front/package.json,3\2\329a0f0b60561dc79495760bd347f3f1373705c1
+R
+"DevOps_Project_Front/.editorconfig,f\c\fc570c3440e37ed72514e1c6703d5db074eb2b79
