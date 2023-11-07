@@ -1,9 +1,9 @@
 # Étape de production
-FROM node
+FROM node:latest as node
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install
 COPY . .
+RUN npm install
 RUN npm run build
-WORKDIR /app/dist
-CMD ["npm", "start"]
+
+FROM nginx:alpine
+COPY --from=node /app/dist/summer-workshop-angular /usr/share/nginx/html
