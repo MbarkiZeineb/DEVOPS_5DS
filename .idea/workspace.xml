@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="715df85d-accd-4d96-bbe6-b92d6acc9bf8" name="Changes" comment="update fct in stock">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps_Project/src/test/java/tn/esprit/devops_project/services/StockServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps_Project/src/test/java/tn/esprit/devops_project/services/StockServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,8 @@
       <workItem from="1699231409691" duration="2044000" />
       <workItem from="1699301834437" duration="4163000" />
       <workItem from="1699311698082" duration="1752000" />
-      <workItem from="1699379342430" duration="1147000" />
+      <workItem from="1699379342430" duration="1768000" />
+      <workItem from="1699389736024" duration="639000" />
     </task>
     <servers />
   </component>
