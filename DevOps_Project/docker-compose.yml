@@ -25,5 +25,11 @@ services:
     volumes:
       - .m2:/root/.m2
     restart : always
+  devops_front:
+    image: zeinebmbarki/devops_front:1.0
+    ports:
+      - "80:80"
+    depends_on:
+      - devops_project
 volumes:
   db:

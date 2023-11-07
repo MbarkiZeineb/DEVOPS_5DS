@@ -54,29 +54,15 @@ class ActivitySectorImplTest {
     @Test
     void deleteActivitySector() {
      ///suprimer
+        ActivitySector activitySector = new ActivitySector(1L, "123mock", "mock");
+
         doNothing().when(activitySectorRepository).deleteById((Long) any());
         activitySectorimp.deleteActivitySector(1L);
         verify(activitySectorRepository).deleteById((Long) any());
     }
 
 
-  /*  @Test
-    void addActivitySector() {
-    }
 
-    @Test
-    void deleteActivitySector() {
 
-    doNothing().when(productRepository).deleteById((Long) any());
-        productServiceImpl.deleteProduct(2L);
-        verify(productRepository).deleteById((Long) any());
-    }
 
-    @Test
-    void updateActivitySector() {
-    }
-
-    @Test
-    void retrieveActivitySector() {
-    }*/
 }
