@@ -31,7 +31,7 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - app
+      - devops_project
 
 
 volumes:
