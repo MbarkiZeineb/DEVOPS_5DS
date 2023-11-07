@@ -1,6 +1,8 @@
+FROM node:9.1.2 AS build
+WORKDIR /
+COPY . .
+RUN npm install --legacy-peer-deps
+RUN npm run build --prod
+# Étape de production
 FROM nginx:alpine
-COPY /dist/* /usr/share/nginx/html
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx.conf /etc/nginx/conf.d/
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+COPY --from=build /app/dist/crudtuto-Front /usr/share/nginx/html/
