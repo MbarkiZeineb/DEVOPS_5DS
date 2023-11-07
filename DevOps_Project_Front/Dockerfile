@@ -4,4 +4,8 @@ COPY . .
 RUN npm install
 # Étape de production
 FROM nginx:alpine
-COPY --from=build /app/dist/crudtuto-Front /usr/share/nginx/html/
+COPY /dist/* /usr/share/nginx/html
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
