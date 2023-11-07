@@ -1,4 +1,4 @@
-FROM node:9.1.2 AS build
+FROM node AS build
 WORKDIR /
 COPY . .
 RUN npm install --legacy-peer-deps
