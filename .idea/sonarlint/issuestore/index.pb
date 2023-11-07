@@ -19,3 +19,11 @@ XDevOps_Project/src/test/java/tn/esprit/devops_project/services/StockServiceImpl
 VDevOps_Project/src/main/java/tn/esprit/devops_project/services/ActivitySectorImpl.java,2\2\22e09eec8037db72a31465d66e3b243320df346e
 †
 VDevOps_Project/src/main/java/tn/esprit/devops_project/controllers/StockController.java,2\6\2663794c8f01f908639390b758f84f1d6d0a5e5d
+Q
+!DevOps_Project/docker-compose.yml,e\9\e9fd6befc015f7907f09e6609141ae18f0193743
+I
+DevOps_Project/Dockerfile,0\b\0b1256adeedef4f6f70e8891b750585a37192bc7
+O
+DevOps_Project_Front/Dockerfile,0\3\03b49e9854185acba84e9331e2eec5d3417270f0
+Q
+!DevOps_Project_Front/angular.json,e\c\ec4ee48988325dc72e3f614b777f7dce88b0de54
