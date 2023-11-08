@@ -63,3 +63,5 @@ I
 ZDevOps_Project/src/test/java/tn/esprit/devops_project/services/ActivitySectorImplTest.java,f\f\ff76f0d269b8267a33268e2750bb6f4291da54d5
 Š
 ZDevOps_Project/src/test/java/tn/esprit/devops_project/services/ProductServiceImplTest.java,2\c\2c52ff868805972707bdc5f0ad2662dc4204d5b2
+O
+DevOps_Project_Front/Dockerfile,0\3\03b49e9854185acba84e9331e2eec5d3417270f0
