@@ -29,7 +29,7 @@ services:
   devops_front:
     image: abirbarouni/devops_front:1.0
     ports:
-      - "83:83"
+      - "80:80"
     depends_on:
       - devops_project
 
